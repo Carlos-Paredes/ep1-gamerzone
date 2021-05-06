@@ -1,0 +1,73 @@
+<section id="covid" class="padded">
+    <div id="titulo">
+      <h1>Coronavirus (COVID-19) </h1>
+    </div>
+    
+    <div id="lorem">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua. Ipsum faucibus vitae aliquet nec ullamcorper sit amet risus nullam. Tincidunt vitae semper quis lectus nulla
+        at. Vestibulum morbi blandit cursus risus at ultrices mi. Dui vivamus arcu felis bibendum ut tristique. Ut placerat
+        orci nulla pellentesque dignissim enim sit. Ac auctor augue mauris augue neque gravida in. Ultricies tristique nulla
+        aliquet enim tortor. Ut sem viverra aliquet eget sit. In hendrerit gravida rutrum quisque non tellus. Amet justo
+        donec enim diam. Facilisis gravida neque convallis a cras semper auctor neque.
+      </p>
+      Nisi vitae suscipit tellus mauris. Dolor sed viverra ipsum nunc aliquet bibendum enim facilisis. Enim ut sem viverra
+      aliquet eget sit amet tellus cras. Mi tempus imperdiet nulla malesuada. Imperdiet dui accumsan sit amet. Quam
+      viverra orci sagittis eu volutpat odio facilisis mauris. Sit amet volutpat consequat mauris nunc. Tempus iaculis
+      urna id volutpat lacus laoreet non curabitur gravida. Est ultricies integer quis auctor elit sed vulputate mi sit.
+      Blandit cursus risus at ultrices mi tempus imperdiet nulla. In arcu cursus euismod quis viverra nibh cras pulvinar
+      mattis. Aliquet sagittis id consectetur purus.
+      <p></p>
+      Accumsan in nisl nisi scelerisque eu. Arcu dictum varius duis at. Quis imperdiet massa tincidunt nunc pulvinar
+      sapien et. Duis tristique sollicitudin nibh sit amet commodo nulla. Et malesuada fames ac turpis egestas. Volutpat
+      consequat mauris nunc congue. Sit amet venenatis urna cursus eget. Vel elit scelerisque mauris pellentesque pulvinar
+      pellentesque habitant morbi tristique. Lobortis scelerisque fermentum dui faucibus in ornare. Dictumst quisque
+      sagittis purus sit amet volutpat consequat. Consequat semper viverra nam libero justo laoreet sit amet. Lectus
+      mauris ultrices eros in cursus turpis massa tincidunt. Cursus risus at ultrices mi tempus imperdiet nulla malesuada.
+      Eget mauris pharetra et ultrices neque ornare aenean euismod.
+      <p></p>
+      Amet mauris commodo quis imperdiet. Vitae semper quis lectus nulla at volutpat diam ut. Tempor commodo ullamcorper a
+      lacus vestibulum sed arcu non odio. Elementum eu facilisis sed odio morbi quis. Cursus vitae congue mauris rhoncus
+      aenean vel elit scelerisque. Integer enim neque volutpat ac tincidunt vitae. Hendrerit dolor magna eget est lorem
+      ipsum dolor. Fames ac turpis egestas integer eget. Quisque non tellus orci ac auctor augue mauris augue. Pharetra et
+      ultrices neque ornare aenean euismod elementum nisi. Faucibus nisl tincidunt eget nullam non nisi est. Eget velit
+      aliquet sagittis id consectetur. Pellentesque habitant morbi tristique senectus. Accumsan sit amet nulla facilisi
+      morbi tempus iaculis. Malesuada fames ac turpis egestas maecenas pharetra convallis posuere morbi. Scelerisque felis
+      imperdiet proin fermentum leo vel.
+      <p></p>
+      Ac placerat vestibulum lectus mauris. Egestas purus viverra accumsan in nisl nisi scelerisque. Et sollicitudin ac
+      orci phasellus. Aliquam etiam erat velit scelerisque. In ante metus dictum at tempor commodo ullamcorper a lacus.
+      Lectus urna duis convallis convallis. Nec sagittis aliquam malesuada bibendum. Eget gravida cum sociis natoque
+      penatibus et. Sed odio morbi quis commodo odio aenean sed adipiscing diam. Morbi tristique senectus et netus et
+      malesuada fames. Fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis. Eros donec ac odio tempor
+      orci dapibus. Nulla malesuada pellentesque elit eget gravida cum sociis natoque. Mi sit amet mauris commodo. Tellus
+      orci ac auctor augue mauris augue neque gravida in. Feugiat scelerisque varius morbi enim.
+    </div>
+    
+    <div id="main-container">
+      <h2>Covid Conteo</h2>
+      <p></p>
+      <div class="table-responsive">
+        <table class="table table-dark table-hover">
+          <thead>
+            <tr id="header">
+              <th>Fecha</th>
+              <th>Estado</th>
+              <th>Positivos</th>
+              <th>Negativos</th>
+              <th>Hospitalizados</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let filaCovid of listaCovid">
+              <td>{{filaCovid.date}}</td>
+              <td>{{filaCovid.states}}</td>
+              <td>{{filaCovid.positive}}</td>
+              <td>{{filaCovid.negative}}</td>
+              <td>{{filaCovid.hospitalizedCurrently}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    </section>

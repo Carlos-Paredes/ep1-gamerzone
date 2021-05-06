@@ -1,0 +1,52 @@
+<section id="lol" class="padded">
+    <div id="main-container">
+        <div id="titulo">
+        <h2>Campeones de Lol</h2>
+    </div>
+            <p></p>
+            <div class="table-responsive">
+                <table class="table table-dark table-hover">
+                    <thead>
+                        <tr>
+                            <th>Campeón</th>
+                            <th>Posición</th>
+                            <th>Tipo</th>
+                            <th>Runa</th>
+                        </tr>
+                    </thead>
+ 
+                    <tbody>
+                        <tr *ngFor="let heroe of campeones">
+                            <td>{{heroe.Campeon}}</td>
+                            <td>{{heroe.Posicion}}</td>
+                            <td>{{heroe.tipo}}</td>
+                            <td>{{heroe.runa}}</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+
+    </div>
+
+    <section id="armas" class="padded">
+        <div id="main-container">
+            <h2>Armas De CSGO</h2>
+    
+        <div class="black">
+            <div class="row row-cols-1 row-cols-md-2 g-2">
+                <div class="col" *ngFor="let filaarma of armas">
+                  <div class="card">
+                    <img src="{{filaarma.foto}}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        {{filaarma.nombre}} </h5>
+                      <h6>Potencia: {{filaarma.potencia}}<br>Precio:{{filaarma.precio}}<br>Cargador:{{filaarma.cargador}}</h6>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+</section>

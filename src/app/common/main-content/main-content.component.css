@@ -119,6 +119,7 @@ ol, ul {
   padding-left: 0rem;
 }
 .btn_1 {
+  margin-top: 50px;
   display: inline-block;
   width: 71px;
   height: 67px;
@@ -635,6 +636,7 @@ img {
   display: table;
   width: 100%;
   table-layout: fixed;
+  margin: 0;
 }
 
 ol, ul {
@@ -658,6 +660,7 @@ ol, ul {
   background: 0 -5px;
   -webkit-transition: none;
   transition: none;
+  background: url(/assets/imagesGZ/image7.jpg) 0 -5px;
 }
 
 a {
@@ -674,6 +677,7 @@ a {
   background: -157px -9px;
   -webkit-transition: none;
   transition: none;
+  background: url(/assets/imagesGZ/image7.jpg) -157px -9px !important;
 }
 .icon_3 {
   display: inline-block;
@@ -682,6 +686,7 @@ a {
   background: -295px -5px;
   -webkit-transition: none;
   transition: none;
+  background: url(/assets/imagesGZ/image7.jpg) -295px -5px !important;
 }
 .icon_4 {
   display: inline-block;
@@ -690,6 +695,7 @@ a {
   background: -456px 0;
   -webkit-transition: none;
   transition: none;
+  background: url(/assets/imagesGZ/image7.jpg) -456px 0 !important;
 }
 #content {
   overflow: hidden;

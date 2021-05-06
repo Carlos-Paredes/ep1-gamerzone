@@ -146,6 +146,8 @@ img {
 /*============  Floats  =============*/
 .put-left {
   float: left;
+  margin-top: 7px;
+  margin-right: 20px;
 }
 .put-right {
   float: right;
@@ -163,4 +165,40 @@ img {
   --bs-table-accent-bg: rgb(22 27 162);
   color: #115394;
   cursor: pointer;
+}
+#titulo {
+  margin: 60px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: larger;
+  color: rgb(189, 226, 72);
+
+}
+
+#lorem {
+  margin: 60px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: large;
+  color: rgb(202, 195, 186);
+}
+
+.table-hover>tbody>tr:hover {
+  --bs-table-accent-bg: rgb(#a75261);
+  color: #f17373;
+  cursor: pointer;
+}
+
+#main-container {
+  margin: 100px auto;
+  width: 800px;
+  font-family: 'Raleway', sans-serif;
+}
+
+table {
+  text-align: center;
+  width: 100px;
+  border-collapse: collapse;
+  font-family: 'Raleway', sans-serif;
+}
+.card-body{
+  color: black;
 }

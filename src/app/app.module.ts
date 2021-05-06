@@ -13,6 +13,9 @@ import { MainFooterComponent } from './common/main-footer/main-footer.component'
 import { FifaComponent } from './components/fifa/fifa.component';
 import { BreakingbadComponent } from './components/breakingbad/breakingbad.component';
 import { FutbolistasComponent } from './locales/futbolistas/futbolistas.component';
+import { JuegoComponent } from './locales/juego/juego.component';
+import { CovidComponent } from './components/covid/covid.component';
+import { LolComponent } from './locales/lol/lol.component';
 
 
 @NgModule({
@@ -24,7 +27,10 @@ import { FutbolistasComponent } from './locales/futbolistas/futbolistas.componen
     MainFooterComponent,
     FifaComponent,
     BreakingbadComponent,
-    FutbolistasComponent
+    FutbolistasComponent,
+    JuegoComponent,
+    CovidComponent,
+    LolComponent
   ],
   imports: [
     BrowserModule,
