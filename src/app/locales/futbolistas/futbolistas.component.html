@@ -1,0 +1,38 @@
+<section id="futbolistas" class="padded">
+    <div class="container">
+        <h2>Futbolistas</h2>
+        <h3>Mejores Futbolistas</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Código</th>
+                            <th>Nombre</th>
+                            <th>Posición</th>
+                            <th>Posición</th>
+                            <th>Nacionalidad</th>
+                            <th>Edad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Jala datos de genios.components.ts -->
+                        <tr *ngFor="let fut of personas" 
+                        (click)="seleccionar(fut)"
+                        [class.fila-seleccionada]="fut === futbolistaElegido"> 
+                            <td>{{fut.id}}</td>
+                            <td>{{fut.nombre}}</td>
+                            <td>{{fut.posicion}}</td>
+                            <td>{{fut.nacionalidad}}</td>
+                            <td>{{fut.posicion}}</td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-4"*ngIf="futbolistaElegido">
+                <img src={{futbolistaElegido.foto}} class="img-fluid" alt={{futbolistaElegido.nombre}}>
+            </div>
+        </div>
+    </div>
+</section>

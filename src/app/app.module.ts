@@ -12,6 +12,7 @@ import { MainContentComponent } from './common/main-content/main-content.compone
 import { MainFooterComponent } from './common/main-footer/main-footer.component';
 import { FifaComponent } from './components/fifa/fifa.component';
 import { BreakingbadComponent } from './components/breakingbad/breakingbad.component';
+import { FutbolistasComponent } from './locales/futbolistas/futbolistas.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { BreakingbadComponent } from './components/breakingbad/breakingbad.compo
     MainContentComponent,
     MainFooterComponent,
     FifaComponent,
-    BreakingbadComponent
+    BreakingbadComponent,
+    FutbolistasComponent
   ],
   imports: [
     BrowserModule,
