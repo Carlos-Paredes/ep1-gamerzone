@@ -1,0 +1,121 @@
+#footer {
+    background: #0f1113;
+    padding: 81px 0 70px;
+}
+.grid_3{
+    width: 270px;
+}
+.grid_12 {
+    width: 1170px;
+}
+[class*="grid_"] {
+    float: left;
+    min-height: 1px;
+    margin-left: 17px;
+}
+.color_9 {
+    color: #8594a3;
+}
+.list_2 {
+    margin-top: 10px;
+}
+ol, ul {
+    list-style: none;
+}
+.row {
+    margin-left: -30px;
+}
+#footer .text_6{
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+.text_6 {
+    font: 300 20px/20px 'Open Sans', sans-serif;
+}
+.list_2 li {
+    color: #3a3f48;
+    text-transform: uppercase;
+    font: 400 12px/22px Arial, sans-serif;
+}
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+ol, ul {
+    padding-left: 0px;
+}
+.social-list {
+    padding-top: 15px;
+}
+.social-list li {
+    float: left;
+}
+.social-list a {
+    display: inline-block;
+    width: 51px;
+    height: 51px;
+    color: #ffffff;
+    background: #22272b;
+    text-align: center;
+    font: normal 26px/54px 'FontAwesome';
+    border-radius: 26px;
+}
+.social-list a:hover {
+    color: #ffffff;
+    background: #9dc02e;
+  }
+.social-list li + li {
+    margin-left: 13px;
+}
+ol, ul {
+    list-style: none;
+}
+.info {
+    margin: 68px 0 66px;
+    text-align: left;
+    color: #63842d;
+}
+.info h2 {
+    display: inline-block;
+    margin-top: 32px;
+    position: relative;
+    color: #ffffff;
+    overflow: hidden;
+}
+.info .text_7 {
+    margin-left: 198px;
+    margin-top: -52px;
+    color: #3b3f49;
+}
+a:hover{
+    color: #9dc02e;
+}
+.text_7 {
+    font: 300 15px/20px 'Open Sans', sans-serif;
+}
+.info h2 a {
+    display: block;
+    position: relative;
+    padding-left: 75px;
+    text-transform: capitalize;
+    font: 300 34px/34px 'Open Sans', sans-serif;
+}
+.info h2 a .fa {
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 56px;
+    top: 6px;
+    left: 0;
+    margin-right: 5px;
+    color: #ffffff;
+    background: #9dc02e;
+    font: 400 34px/56px 'FontAwesome';
+    text-align: center;
+    -webkit-box-shadow: 0 4px 0 0 #63842d;
+    box-shadow: 0 4px 0 0 #63842d;
+    border-radius: 500px;
+}

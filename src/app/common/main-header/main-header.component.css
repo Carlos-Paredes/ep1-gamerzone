@@ -1,0 +1,111 @@
+/*========================================================
+                    HEADER estilos
+=========================================================*/
+#header {
+  background: url(src\assets\header.jpg) repeat;
+}
+.brand {
+  margin: 19px 0 66px;
+  text-align: center;
+  color: #63842d;
+}
+.brand h1 {
+  margin-top: 30px;
+  position: relative;
+  color: #ffffff;
+  text-align: left;
+  overflow: hidden;
+}
+.brand h1 a {
+  display: block;
+  position: relative;
+  padding-left: 110px;
+  text-transform: capitalize;
+  font: 300 50px/50px 'Open Sans', sans-serif;
+}
+.brand h1 a .fas {
+  position: absolute;
+  display: block;
+  width: 87px;
+  height: 83px;
+  top: 8px;
+  left: 0;
+  font-size: 147px;
+  line-height: 94px;
+  margin-right: 5px;
+  color: #ffffff;
+  background: #9dc02e;
+  font: 400 50px/81px 'FontAwesome';
+  text-align: center;
+  border-radius: 500px;
+  -webkit-box-shadow: 0 4px 0 0 #63842d;
+  box-shadow: 0 4px 0 0 #63842d;
+}
+@media (max-width: 767px) {
+  .brand {
+    float: none;
+    margin-bottom: 0;
+  }
+}
+#search {
+  padding-top: 75px;
+  height: 47px;
+}
+#search .input_wrap {
+  display: inline-block;
+  width: 207px;
+  height: 100%;
+  padding: 0 10px;
+  /* color: #ffffff; */
+  background: #202227;
+}
+#search .input_wrap input {
+  /* display: block; */
+  /* width: 100%; */
+  padding: 14px 0 13px;
+  line-height: 20px;
+  letter-spacing: 0;
+  font: 600 14px 'Open Sans', sans-serif;
+  color: #ffffff;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  overflow: hidden;
+  margin: 0;
+}
+#search .fa-search {
+  display: inline-block;
+  width: 47px;
+  float: none;
+  height: 100%;
+  background: #9dc02e;
+  border-bottom: 4px solid #63842d;
+  font-size: 25px;
+  line-height: 41px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#search .fa-search:hover {
+  /* color: #31353d; */
+  background: #fff;
+  border-bottom-color: #c8c8c8;
+}
+@media (max-width: 767px) {
+  #search {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    float: none;
+  }
+  #search .input_wrap {
+    width: 352px;
+  }
+}
+@media (max-width: 479px) {
+  #search .input_wrap {
+    width: 202px;
+  }
+}
+

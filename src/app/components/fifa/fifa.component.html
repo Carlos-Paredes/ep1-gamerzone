@@ -1,0 +1,28 @@
+<section id="fifa" class="padded">
+    <div class="container">
+        <h2>Tabla de Personajes de "Rick y Morty"</h2>
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th class="text end">Codigo</th>
+                    <th class="text end">Nombre</th>
+                    <th class="text end">Estado</th>
+                    <th class="text end">Especie</th>
+                    <th class="text end">Genero</th>
+                    <th class="text end">Foto</th>            
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Jala datos de fifa.components.ts -->
+                <tr *ngFor="let filafifa of listaJugadores">
+                    <td>{{filafifa.id}}</td>
+                    <td>{{filafifa.name}}</td>
+                    <td>{{filafifa.status}}</td>
+                    <td>{{filafifa.species}}</td>
+                    <td>{{filafifa.gender}}</td>
+                    <td><img src="{{filafifa.image}}" class="img-fluid" alt=""></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
