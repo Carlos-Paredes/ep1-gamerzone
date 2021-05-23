@@ -192,13 +192,4 @@ img {
   width: 800px;
   font-family: 'Raleway', sans-serif;
 }
-
-table {
-  text-align: center;
-  width: 100px;
-  border-collapse: collapse;
-  font-family: 'Raleway', sans-serif;
-}
-.card-body{
-  color: black;
-}
+/*Para apegar todas las cosas*/

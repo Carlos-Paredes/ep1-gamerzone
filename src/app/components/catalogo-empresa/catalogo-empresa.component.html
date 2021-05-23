@@ -1,0 +1,18 @@
+<section id="consola" class="padded">
+    <div class="container">
+        <h2>Consolas</h2>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col" *ngFor="let filaconsola of listaConsolas">
+              <div class="card">
+                <img src="https://carlosp01.000webhostapp.com/servicio-gamerzone/{{filaconsola.imageConsole}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    <h6>{{filaconsola.nameConsole}}</h6>
+                     {{filaconsola.distribuitor}} {{filaconsola.price}}</h5>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</section>

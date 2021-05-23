@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MainContentComponent } from './common/main-content/main-content.component';
 import { BreakingbadComponent } from './components/breakingbad/breakingbad.component';
+import { CatalogoEmpresaComponent } from './components/catalogo-empresa/catalogo-empresa.component';
 import { CovidComponent } from './components/covid/covid.component';
 import { FifaComponent } from './components/fifa/fifa.component';
 import { FutbolistasComponent } from './locales/futbolistas/futbolistas.component';
@@ -15,7 +16,8 @@ const routes: Routes = [
   {path: 'futbolistas', component: FutbolistasComponent},
   {path: 'juegos', component: JuegoComponent},
   {path: 'covids', component: CovidComponent},
-  {path: 'lols', component: LolComponent}
+  {path: 'lols', component: LolComponent},
+  {path: 'consola', component: CatalogoEmpresaComponent}
 ];
 
 @NgModule({

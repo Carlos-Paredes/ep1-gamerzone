@@ -1,28 +1,31 @@
 <section id="fifa" class="padded">
     <div class="container">
-        <h2>Tabla de Personajes de "Rick y Morty"</h2>
+      <h2>Ricky and morty characters</h2>
+      <div id="main-container">
         <table class="table table-striped table-hover table-dark table-hover">
-            <thead>
-                <tr>
-                    <th class="text end">Codigo</th>
-                    <th class="text end">Nombre</th>
-                    <th class="text end">Estado</th>
-                    <th class="text end">Especie</th>
-                    <th class="text end">Genero</th>
-                    <th class="text end">Foto</th>            
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Jala datos de fifa.components.ts -->
-                <tr *ngFor="let filafifa of listaJugadores">
-                    <td>{{filafifa.id}}</td>
-                    <td>{{filafifa.name}}</td>
-                    <td>{{filafifa.status}}</td>
-                    <td>{{filafifa.species}}</td>
-                    <td>{{filafifa.gender}}</td>
-                    <td><img src="{{filafifa.image}}" class="img-fluid" alt=""></td>
-                </tr>
-            </tbody>
+          <thead>
+            <tr>
+              <th class="text end">Codigo</th>
+              <th class="text end">Nombre</th>
+              <th class="text end">Estado</th>
+              <th class="text end">Especie</th>
+              <th class="text end">Genero</th>
+              <th class="text end">Foto</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Jala datos de fifa.components.ts -->
+            <tr *ngFor="let filafifa of listaJugadores">
+              <td class="ewe">{{filafifa.id}}</td>
+              <td class="ewe">{{filafifa.name}}</td>
+              <td class="ewe">{{filafifa.status}}</td>
+              <td class="ewe">{{filafifa.species}}</td>
+              <td class="ewe">{{filafifa.gender}}</td>
+              <td><img src="{{filafifa.image}}" class="img-fluid EditIMG" alt=""></td>
+            </tr>
+          </tbody>
         </table>
+      </div>
     </div>
-</section>
+  
+  </section>

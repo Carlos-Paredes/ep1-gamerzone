@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
+import { FilterPipeModule } from 'ngx-filter-pipe';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
@@ -16,6 +17,8 @@ import { FutbolistasComponent } from './locales/futbolistas/futbolistas.componen
 import { JuegoComponent } from './locales/juego/juego.component';
 import { CovidComponent } from './components/covid/covid.component';
 import { LolComponent } from './locales/lol/lol.component';
+import { CatalogoEmpresaComponent } from './components/catalogo-empresa/catalogo-empresa.component';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -30,20 +33,18 @@ import { LolComponent } from './locales/lol/lol.component';
     FutbolistasComponent,
     JuegoComponent,
     CovidComponent,
-    LolComponent
+    LolComponent,
+    CatalogoEmpresaComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
-    HttpClientModule
+    FilterPipeModule,
+    HttpClientModule,
+    RouterModule.forChild([])
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { 
-  constructor(library: FaIconLibrary) {
-    // Add an icon to the library for convenient access in other components
-    library.addIconPacks(fas);
-    }
-}
+export class AppModule { }

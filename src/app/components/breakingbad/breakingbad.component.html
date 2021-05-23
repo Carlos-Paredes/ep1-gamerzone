@@ -1,6 +1,7 @@
 <section id="breakingbad" class="padded">
     <div class="container">
         <h2>Breaking Bad</h2>
+        <div id="main-container">
         <table class="table table-striped table-hover table-dark table-hover">
             <thead>
                 <tr>
@@ -17,15 +18,16 @@
             <tbody>
                 <!-- Jala datos de breakingbad.components.ts -->
                 <tr *ngFor="let filapersonaje of listaPersonajes">
-                    <td class="text end">{{filapersonaje.char_id}}</td>
-                    <td class="text end">{{filapersonaje.name}}</td>
-                    <td class="text end">{{filapersonaje.birthday}}</td>
-                    <td class="text end">{{filapersonaje.status}}</td>
-                    <td class="text end">{{filapersonaje.nickname}}</td>
-                    <td class="text end">{{filapersonaje.portrayed}}</td>
-                    <td><img src="{{filapersonaje.img}}" class="img-fluid" alt=""></td>
+                    <td class="owo">{{filapersonaje.char_id}}</td>
+                    <td class="owo">{{filapersonaje.name}}</td>
+                    <td class="owo">{{filapersonaje.birthday}}</td>
+                    <td class="owo">{{filapersonaje.status}}</td>
+                    <td class="owo">{{filapersonaje.nickname}}</td>
+                    <td class="owo">{{filapersonaje.portrayed}}</td>
+                    <td><img src="{{filapersonaje.img}}" class="img-fluid EditIMG" alt=""></td>
                 </tr>
             </tbody>
         </table>
+    </div>
     </div>
 </section>
