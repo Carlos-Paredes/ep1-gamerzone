@@ -1,14 +1,27 @@
 .ewe {
-    padding-top: 55px;
-    font-size: 15px;
-  
-  }
-  
-  .EditIMG {
-    width: 120px;
-    height: 120px;
-  }
-  
-  .uu {
-    padding: 150px;
-  }
+  padding-top: 55px;
+  font-size: 15px;
+
+}
+
+.EditIMG {
+  width: 120px;
+  height: 120px;
+}
+
+.uu {
+  padding: 150px;
+}
+
+.descripion {
+    color: #1e2026;
+}
+.details{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 30px;
+}
+.details h5{
+  font-weight: bold;
+}

@@ -1,31 +1,72 @@
 <section id="fifa" class="padded">
-    <div class="container">
-      <h2>Ricky and morty characters</h2>
-      <div id="main-container">
-        <table class="table table-striped table-hover table-dark table-hover">
-          <thead>
-            <tr>
-              <th class="text end">Codigo</th>
-              <th class="text end">Nombre</th>
-              <th class="text end">Estado</th>
-              <th class="text end">Especie</th>
-              <th class="text end">Genero</th>
-              <th class="text end">Foto</th>
-            </tr>
-          </thead>
-          <tbody>
-            <!-- Jala datos de fifa.components.ts -->
-            <tr *ngFor="let filafifa of listaJugadores">
-              <td class="ewe">{{filafifa.id}}</td>
-              <td class="ewe">{{filafifa.name}}</td>
-              <td class="ewe">{{filafifa.status}}</td>
-              <td class="ewe">{{filafifa.species}}</td>
-              <td class="ewe">{{filafifa.gender}}</td>
-              <td><img src="{{filafifa.image}}" class="img-fluid EditIMG" alt=""></td>
-            </tr>
-          </tbody>
-        </table>
+  <div class="container">
+    <h2>Ricky and morty characters</h2>
+    <div id="main-container">
+      <table class="table table-striped table-hover table-dark table-hover">
+        <thead>
+          <tr>
+            <th class="text end">Codigo</th>
+            <th class="text end">Nombre</th>
+            <th class="text end">Estado</th>
+            <th class="text end">Especie</th>
+            <th class="text end">Genero</th>
+            <th class="text end">Foto</th>
+            <th class="text end">Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Jala datos de fifa.components.ts -->
+          <tr *ngFor="let filafifa of listaJugadores">
+            <td class="ewe">{{filafifa.id}}</td>
+            <td class="ewe">{{filafifa.name}}</td>
+            <td class="ewe">{{filafifa.status}}</td>
+            <td class="ewe">{{filafifa.species}}</td>
+            <td class="ewe">{{filafifa.gender}}</td>
+            <td><img src="{{filafifa.image}}" class="img-fluid EditIMG" alt=""></td>
+            <td class="pt-5">
+              <button  class="btn btn-primary mx-auto"
+                       data-bs-toggle="modal"
+                       data-bs-target="#exampleModal"
+                       (click)="displaySelectedPlayer(filafifa)">
+                See more detail
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Master Detail</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="card-body">
+              <div class="d-flex descripion ">
+                <img class="card-img-top" width="150" [src]="playerSelected ? playerSelected.image : ''" alt="Card image cap">
+                <div class="details">
+                  <h5>Name:</h5>
+                  <p class="card-text">{{playerSelected ? playerSelected.name : ''}}</p>
+                  <h5>Species:</h5>
+                  <p class="card-text">{{playerSelected ? playerSelected.species : ''}}</p>
+                  <h5>Status:</h5>
+                  <p class="card-text">{{playerSelected ? playerSelected.status : ''}}</p>
+                </div>
+              </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+            </div>
+          </div>
+        </div>
       </div>
+
     </div>
-  
-  </section>
+  </div>
+
+</section>
