@@ -1,26 +1,24 @@
 <section id="consola" class="padded">
-    <div class="container">
-        <h2>MIS PRODUCTOS</h2>
+  <div class="container">
+    <h2 class="nosea">MIS PRODUCTOS</h2>
+    <p></p>
+    <div class="row">
+      <div class="col-md-3">
+        <ul class="list-group">
+          <li class="list-group-item table-hover" id="blackowo" *ngFor="let filaConsola of listaConsolas" (click)=seleccionar(filaConsola)
+            [class.active]='filaConsola === consolaElegida'>
+            <h5>{{filaConsola.nombre}}</h5>
+            <small>{{filaConsola.descripcion}}</small>
+          </li>
 
-        <div class="row">
-          <div class="col-md-3">
-              <ul class="list-group">
-                  <li class="list-group-item" 
-                      *ngFor="let filaConsola of listaConsolas"
-                      (click)=seleccionar(filaConsola) 
-                      [class.active]='filaConsola === consolaElegida'>
-                      <h5>{{filaConsola.nombre}}</h5>
-                      <small>{{filaConsola.descripcion}}</small>                        
-                  </li>
-
-              </ul>
-          </div>
-          <div class="col-md-9" *ngIf="consolaElegida">
-              <h3>{{consolaElegida.nombre}}</h3>
-              <p>{{consolaElegida.descripcion}}</p>
-              <app-producto [ConsolaX]="consolaElegida"> 
-              </app-producto>
-          </div>
-      </div>    
+        </ul>
+      </div>
+      <div class="col-md-9" *ngIf="consolaElegida">
+        <h3 class="nosea2">{{consolaElegida.nombre}}</h3>
+        <p>{{consolaElegida.descripcion}}</p>
+        <app-producto [ConsolaX]="consolaElegida">
+        </app-producto>
+      </div>
+    </div>
   </div>
-</section>   
+</section>
