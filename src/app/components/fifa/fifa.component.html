@@ -7,10 +7,6 @@
           <tr>
             <th class="text end">Codigo</th>
             <th class="text end">Nombre</th>
-            <th class="text end">Estado</th>
-            <th class="text end">Especie</th>
-            <th class="text end">Genero</th>
-            <th class="text end">Foto</th>
             <th class="text end">Details</th>
           </tr>
         </thead>
@@ -19,16 +15,12 @@
           <tr *ngFor="let filafifa of listaJugadores">
             <td class="ewe">{{filafifa.id}}</td>
             <td class="ewe">{{filafifa.name}}</td>
-            <td class="ewe">{{filafifa.status}}</td>
-            <td class="ewe">{{filafifa.species}}</td>
-            <td class="ewe">{{filafifa.gender}}</td>
-            <td><img src="{{filafifa.image}}" class="img-fluid EditIMG" alt=""></td>
             <td class="pt-5">
               <button  class="btn btn-primary mx-auto"
                        data-bs-toggle="modal"
                        data-bs-target="#exampleModal"
                        (click)="displaySelectedPlayer(filafifa)">
-                See more detail
+                See more details
               </button>
             </td>
           </tr>

@@ -9,7 +9,7 @@ export class ConsolaService {
   constructor(private http: HttpClient) { }
 
   consolasSelect(){
-    const ruta = "https://carlosp01.000webhostapp.com/servicio-gamerzone/consola.php";
+    const ruta = "https://carlosp01.000webhostapp.com/servicio-gamerzone/categorias.php";
     return this.http.get(ruta);
   }
 }

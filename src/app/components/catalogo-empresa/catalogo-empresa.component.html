@@ -1,18 +1,26 @@
 <section id="consola" class="padded">
     <div class="container">
-        <h2>Consolas</h2>
+        <h2>MIS PRODUCTOS</h2>
 
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col" *ngFor="let filaconsola of listaConsolas">
-              <div class="card">
-                <img src="https://carlosp01.000webhostapp.com/servicio-gamerzone/{{filaconsola.imageConsole}}" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">
-                    <h6>{{filaconsola.nameConsole}}</h6>
-                     {{filaconsola.distribuitor}} {{filaconsola.price}}</h5>
-                </div>
-              </div>
-            </div>
-        </div>
-    </div>
-</section>
+        <div class="row">
+          <div class="col-md-3">
+              <ul class="list-group">
+                  <li class="list-group-item" 
+                      *ngFor="let filaConsola of listaConsolas"
+                      (click)=seleccionar(filaConsola) 
+                      [class.active]='filaConsola === consolaElegida'>
+                      <h5>{{filaConsola.nombre}}</h5>
+                      <small>{{filaConsola.descripcion}}</small>                        
+                  </li>
+
+              </ul>
+          </div>
+          <div class="col-md-9" *ngIf="consolaElegida">
+              <h3>{{consolaElegida.nombre}}</h3>
+              <p>{{consolaElegida.descripcion}}</p>
+              <app-producto [ConsolaX]="consolaElegida"> 
+              </app-producto>
+          </div>
+      </div>    
+  </div>
+</section>   

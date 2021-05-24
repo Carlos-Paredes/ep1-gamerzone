@@ -19,6 +19,7 @@ import { CovidComponent } from './components/covid/covid.component';
 import { LolComponent } from './locales/lol/lol.component';
 import { CatalogoEmpresaComponent } from './components/catalogo-empresa/catalogo-empresa.component';
 import { RouterModule } from '@angular/router';
+import { ProductosComponent } from './components/producto/producto.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { RouterModule } from '@angular/router';
     JuegoComponent,
     CovidComponent,
     LolComponent,
-    CatalogoEmpresaComponent
+    CatalogoEmpresaComponent,
+    ProductosComponent
   ],
   imports: [
     BrowserModule,

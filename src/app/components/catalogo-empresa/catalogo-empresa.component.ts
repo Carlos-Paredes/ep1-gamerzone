@@ -10,6 +10,7 @@ import { ConsolaService } from 'src/app/services/consola.service';
 export class CatalogoEmpresaComponent implements OnInit {
 
   listaConsolas: Consola[];
+  consolaElegida: Consola;
   constructor(private consolasService: ConsolaService) { }
 
   ngOnInit(): void {
@@ -19,5 +20,9 @@ export class CatalogoEmpresaComponent implements OnInit {
         console.log(res);
       }
     )
+  }
+
+  seleccionar(consolaSeleccionada: Consola){
+    this.consolaElegida = consolaSeleccionada;
   }
 }
